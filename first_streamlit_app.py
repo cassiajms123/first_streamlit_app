@@ -5,7 +5,7 @@ my_fruits_list = my_fruit_list.set_index('Fruit')
 
 streamlit.title('My Parents New Healthy Dinner!') # adding an exlamation mark
 
-streamlit.header('Breafast Menu') 
+streamlit.header('Breakfast Menu') 
 streamlit.text('Omega 3 & Blueberry Oatmeal')
 streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
