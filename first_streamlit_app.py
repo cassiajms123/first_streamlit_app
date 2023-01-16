@@ -17,7 +17,7 @@ streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
 
 streamlit.title('🍌🥭 Build Your Own Fruit Smoothie')
-streamlit.title('My Parents New Healthy Dinner!')
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
