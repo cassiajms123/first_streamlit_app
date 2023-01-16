@@ -1,9 +1,9 @@
 import streamlit
-import pandas
-import requests
-import snowflake.connector
+# import pandas
+# import requests
+# import snowflake.connector
 from urllib.error import URLError
-streamlit.stop()
+
 
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
@@ -63,3 +63,4 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfru
 streamlit.write('The user entered ', add_my_fruit)
 streamlit.write('Thanks for adding', add_my_fruit)
 my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
+streamlit.stop()
