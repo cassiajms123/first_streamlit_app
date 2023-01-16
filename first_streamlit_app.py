@@ -21,7 +21,6 @@ streamlit.dataframe(my_fruit_list)
 
 # Creating USER INTERACTION 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index)
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 streamlit.dataframe(my_fruit_list)
 
 
