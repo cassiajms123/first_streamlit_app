@@ -57,7 +57,7 @@ streamlit.header('Fruityvice Fruit Advice!')
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
-    streamlit.error("Please, select a fruit would you like to get information.")
+    streamlit.error("Please select a fruit would you like to get information.")
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
@@ -88,7 +88,7 @@ try:
 #streamlit.dataframe(my_data_rows)
 
 # add a second text Entry Box
-#add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
-#streamlit.write('The user entered ', add_my_fruit)
-#streamlit.write('Thanks for adding', add_my_fruit)
-#my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
+# add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+# streamlit.write('The user entered ', add_my_fruit)
+# streamlit.write('Thanks for adding', add_my_fruit)
+# my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
