@@ -47,7 +47,7 @@ except URLError as e:
   streamlit.error()
   
 # don't run anything past here while we troubleshoot
-# streamlit.stop()
+
 
 # Querying Our Trial Account Metadata
 #streamlit.text("The fruit load list contains:")
@@ -76,3 +76,4 @@ streamlit.write('The user entered ', add_my_fruit)
 
 # Will not work 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+streamlit.stop()
