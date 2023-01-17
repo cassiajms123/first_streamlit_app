@@ -73,7 +73,7 @@ if streamlit.button('Get Fruit Load List'):
 
 
 # Add a second entry box 
-#add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') 
+#add_my_fruit = streamlit.text_input('What fruit would you like to add?','papaya') 
 #streamlit.write('The user entered ', add_my_fruit)
 
 # Will not work 
