@@ -27,6 +27,7 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 streamlit.dataframe(my_fruit_list)
 
 
+
 # New section to display fruityvice api response
 streamlit.header('Fruityvice Fruit Advice!')
 fruit_choice = streamlit.text_input('What fruit would you like information about?', 'Apple')
@@ -51,4 +52,6 @@ streamlit.dataframe(my_data_rows)
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
 
+# Add a second entry box 
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') streamlit.write('The user entered ', add_my_fruit)
 
