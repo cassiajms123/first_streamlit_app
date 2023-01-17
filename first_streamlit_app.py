@@ -50,10 +50,6 @@ except URLError as e:
 streamlit.stop()
 
 # Querying Our Trial Account Metadata
-# my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-
-
-#my_data_rows = my_cur.fetchall()
 #streamlit.text("The fruit load list contains:")
 # streamlit.dataframe(my_data_rows)
 # my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
@@ -66,7 +62,14 @@ def get_fruit_load_list():
    with my_cur = my_cnx.cursor():
       my_cur.execute("select * from fruit_load_list")
       return my_cur.fetchone()
-      
+# Add a button 
+if streamlit.button('Get Fruit Load List'):
+    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+    my_data_rows = get_fruit_load_list()
+   streamlit.dataframe(my_data_rows)
+
+
+
 # Add a second entry box 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit') 
 streamlit.write('The user entered ', add_my_fruit)
